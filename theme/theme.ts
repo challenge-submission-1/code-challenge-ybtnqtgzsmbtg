@@ -6,29 +6,29 @@ import { createTheme } from "@mui/material";
 export default createTheme({
   // See: https://mui.com/material-ui/customization/breakpoints/#custom-breakpoints
   breakpoints: {
-    // Adapt material ui breakpoint and grid system to production
+    // Adapt material ui breakpoints and grid system to the production
     // tables page breakpoints and grid system.
     values: {
       xs: 0,
       sm: 425,
       md: 768,
       lg: 1024,
-      // The breakpoint and grid system on the production tables page doesn't align with material ui's
-      // grid system (eg., padding/margin implementations) which affects numbers adapted here.
+      // The breakpoints and grid system on the production tables page doesn't match material ui's
+      // grid system implementation (eg., padding/margin) which affects numbers here.
       xl: 1328,
     },
   },
   components: {
     MuiLink: {
       defaultProps: {
-        // All app links don't include underline. This theming system is an effective
-        // way to customize material-ui's components to a design system.
+        // App links don't include underline styles. Customizing material-ui's 
+        // components via the theme is an effective way to match design systems.
         underline: "none",
       },
     },
   },
   // Multiple palettes could be implemented (eg., light mode vs dark mode) and the
-  // app could select the appropriate palette based on conditions (eg., prefers-color-scheme)
+  // app could select palettes based on conditions (eg., prefers-color-scheme)
   // See: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
   palette: {
     background: {

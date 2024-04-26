@@ -43,15 +43,15 @@ export default function Product({ product, ...props }: ProductProps) {
             sx={{
               position: "relative",
               height: "300px",
-              // Setting a fixed width (eg., 400px) on the image or on the image container will cause the image to
-              // grow past its container on smaller devices, use a fluid width while maintaining aspect ratio.
+              // Using a fixed width on the image or the image container will cause the image to
+              // grow past its container on smaller devices, use a fluid width and maintain aspect ratio.
               width: "100%",
             }}
           >
             <Image
               alt={product.images.product[0]?.alt ?? ""}
-              // Given product data from the production tables.json file some product urls are
-              // empty and an opaque unkonwn fallback is used, these images will result in a 404.
+              // Some product urls in the production tables page data are empty and an unknown 
+              // fallback url is used, these images will result in a 404 in this app.
               src={product.images.product[0]?.url ?? ""}
               fill
               style={{

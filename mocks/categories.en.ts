@@ -5,7 +5,7 @@ export default [
   {
     title: "Coffee Tables",
     products: [
-      // Match the shape of a product object from production data.
+      // Match the shape of a product object from production tables page data.
       {
         name: "Mensa Coffee Table",
         savingsText: null,
@@ -23,9 +23,9 @@ export default [
         images: {
           product: [
             {
-              // All product image urls here use the production tables page imagge urls, no local copy available. 
-              // In some cases, the product url was missing which results in a 404 for that image. A fallback would 
-              // work well there, on the production tables page there is a secondary url that's used by some internal mechanism.
+              // All product image urls here use the production tables page image urls, no local copy 
+              // available. In some cases, the product url was missing which results in a 404 for that image. 
+              // A fallback would work well here, the production tables page uses an unknown fallback url.
               url: "https://images.ctfassets.net/z0vszzs4am30/7HcT7RACeygx7KPIX76Wjt/65ecdf623a9dcf022bb3d83f8ab0b941/Tables-Coffee-Mensa-Oak.webp?fm=webp",
               alt: "Tables-Coffee-Mensa-Oak",
             },

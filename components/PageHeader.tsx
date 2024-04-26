@@ -13,8 +13,11 @@ export default function PageHeader({
 }: PageHeaderProps) {
   return (
     <Stack direction="column" spacing={1} {...props}>
-      {/* Some typography on the tables production site uses a serif font while others use sans serif font.
-       * A new typography variant or similar could be added to encapsulate this functionality, will use sx instead. */}
+      {
+        /* Some text on the tables production site uses a serif font while other text
+         * uses a sans serif font. A new typography variant could be added in
+         * the theme or elsewhere for this functionality, using sx instead. */
+      }
       <Typography variant="h1" sx={{ fontWeight: "400", fontFamily: "serif" }}>
         {title}
       </Typography>
