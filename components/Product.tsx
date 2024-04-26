@@ -50,7 +50,7 @@ export default function Product({ product, ...props }: ProductProps) {
           >
             <Image
               alt={product.images.product[0]?.alt ?? ""}
-              // Some product urls in the production tables page data are empty and an unknown 
+              // Some product urls in the production tables page data are empty and an unknown
               // fallback url is used, these images will result in a 404 in this app.
               src={product.images.product[0]?.url ?? ""}
               fill

@@ -21,7 +21,7 @@ export default createTheme({
   components: {
     MuiLink: {
       defaultProps: {
-        // App links don't include underline styles. Customizing material-ui's 
+        // App links don't include underline styles. Customizing material-ui's
         // components via the theme is an effective way to match design systems.
         underline: "none",
       },

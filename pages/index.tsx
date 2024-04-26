@@ -20,24 +20,20 @@ export default function Home({
 
         <meta name="description" content="The Cozey shop tables page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {
-          /* Other relevant page metadata includes:
-           * - opengraph and twitter card metadata (eg., sharing)
-           * - canonical url and alternate url metadata (eg., en vs fr)
-           * - sitemap configuration (eg., via robots file, cms)
-           * - robots metadata (eg., noindex)
-           * See: https://developers.google.com/search/docs/crawling-indexing */
-        }
+        {/* Other relevant page metadata includes:
+         * - opengraph and twitter card metadata (eg., sharing)
+         * - canonical url and alternate url metadata (eg., en vs fr)
+         * - sitemap configuration (eg., via robots file, cms)
+         * - robots metadata (eg., noindex)
+         * See: https://developers.google.com/search/docs/crawling-indexing */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Use semantic html where relevant for accessibility */}
       <Stack component="main" direction="column" spacing={6}>
         <Stack direction="column" spacing={4}>
-          {
-            /* Localized content could be retrieved from a cms or localizations could
-             * be managed by developers in code. These localizations could either use an
-             * internalization system like i18next or something else, hardcoded for now. */
-          }
+          {/* Localized content could be retrieved from a cms or localizations could
+           * be managed by developers in code. These localizations could either use an
+           * internalization system like i18next or something else, hardcoded for now. */}
           <PageHeader
             title="Tables"
             subtitle="A perfect pairing to your sofa"
@@ -50,7 +46,7 @@ export default function Home({
         </Stack>
         <Stack direction="column" spacing={6}>
           {categories.map((category) => {
-            // A category in this app is similar to a section from the production tables page. 
+            // A category in this app is similar to a section from the production tables page.
             return <Category key={category.title} category={category} />;
           })}
         </Stack>
@@ -67,7 +63,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
     context.locale === "en"
       ? categoriesEn
       : // The french content is not translated but can still be rendered and accessed to show the mechanism.
-      categoriesFr;
+        categoriesFr;
 
   return {
     props: {
